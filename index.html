@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=Mov, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Movie List</title>
+</head>
+
+<body>
+    <header>
+        <h1>My Movie list</h1>
+    </header>
+    <main>
+        <section class="FormSection">
+            <form id="movieForm" action="">
+                <fieldset>
+                    <legend>New movie</legend>
+                    <label for="txtName">Name</label><br>
+                    <input type="text" id="txtName" name="txtName" required><br><br>
+                    <label for="listImages">Image</label><br>
+                    <input list="imageslist" id="listImages" required >
+                    <datalist id="imageslist">
+                        <option value="Action">
+                        <option value="Adventure">
+                        <option value="Animation">
+                        <option value="Comedy">
+                        <option value="Detective">
+                        <option value="Fantasy">
+                        <option value="History" selected>
+                        <option value="Horror">
+                        <option value="Musical">
+                        <option value="Pirate">
+                        <option value="Romantic">
+                        <option value="SCI-FI">
+                        <option value="War">
+                        <option value="Western">
+                    </datalist><br><br>
+
+                    <label for="txtRelease">Release</label><br>
+                    <input type="text" id="txtRelease" name="txtRelease" required><br><br>
+
+                    
+
+                    <input type="submit" value="Save" id="submitBtn">
+                    <button onclick="clearFunction()" >Clear LS</button>
+                </fieldset>
+            </form>
+        </section>
+        <section class="tableSection">
+<table id="movieTable"></table>
+        </section>
+    </main>
+    <footer>
+        <h6>All right reserved 2021&copy;ASAC</h6>
+    </footer>
+    <script src="./js/Vanilla.js"></script>
+</body>
+
+</html>
